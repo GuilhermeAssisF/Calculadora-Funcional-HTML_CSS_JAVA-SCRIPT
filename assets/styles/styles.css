@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+:root {
+  --fonte-principal: "Poppins", sans-serif;
+  --cor-branco: #FFFFFF;
+  --cor-cinza: #FAFAFA;
+  --azul-claro: #E9F6FF;
+  --azul: #00B0D7;
+  --vermelho: #FF6060;
+  --preto: #000000;
+  --azul-escuro: #00223A;
+  --cinza-escuro: #001B2F;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: crosshair;
+}
+
+button:hover {
+  color: var(--azul);
+  transform: scale(1.3);
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transform: scale(0.98);
+}
+
+:root {
+  --fonte-principal: "Poppins", sans-serif;
+  --cor-branco: #FFFFFF;
+  --cor-cinza: #FAFAFA;
+  --azul-claro: #E9F6FF;
+  --azul: #00B0D7;
+  --vermelho: #FF6060;
+  --preto: #000000;
+  --azul-escuro: #00223A;
+  --cinza-escuro: #001B2F;
+}
+
+main {
+  background-image: linear-gradient(156.8deg, rgb(30, 144, 231) 27.1%, rgb(67, 101, 225) 77.8%);
+  padding: 29px 300px 100px 300px;
+  display: flex;
+  justify-content: space-around;
+}
+main .calculadora-claro {
+  background-color: var(--cor-cinza);
+  border-radius: 20px;
+  height: 530px;
+  width: 340px;
+  margin-bottom: 29px;
+}
+main .calculadora-claro .cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 20px 20px 0 0;
+  background-color: var(--cor-branco);
+  background-size: 200%;
+}
+main .calculadora-claro .cabecalho .info {
+  display: flex;
+}
+main .calculadora-claro .cabecalho .info #h4 {
+  font-size: 15px;
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  padding-right: 10px;
+}
+main .calculadora-claro .painel {
+  background-color: var(--cor-cinza);
+  padding-top: 81px;
+  padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 80px;
+}
+main .calculadora-claro .painel h3 {
+  font-family: var(--fonte-principal);
+  font-weight: 500;
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding-right: 23px;
+  padding-top: 10px;
+}
+main .calculadora-claro .painel h2 {
+  font-size: 40px;
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  padding-right: 23px;
+}
+main .calculadora-claro .painel h2 #current-operation {
+  padding-bottom: 29px;
+}
+main .calculadora-claro .footer {
+  background-color: var(--azul-claro);
+  padding: 16px 20px 5px 20px;
+  border-radius: 30px;
+  /*#teclado-botoes-azul{
+          margin-right: 10px;
+      }*/
+}
+main .calculadora-claro .footer .teclado {
+  display: flex;
+}
+main .calculadora-claro .footer .teclado .teclado-botoes {
+  display: flex;
+  flex-direction: column;
+}
+main .calculadora-claro .footer .teclado .teclado-botoes .theme {
+  width: 40px;
+  height: 40px;
+  padding: 17px 20px 20px 35px;
+  transition: all 0.7s ease;
+  overflow: hidden;
+}
+main .calculadora-claro .footer .teclado .teclado-botoes .bloco {
+  width: 250px;
+  height: 150px;
+  margin: 15px;
+  overflow: hidden;
+}
+main .calculadora-claro .footer .teclado .teclado-botoes .bloco .theme {
+  transition: all 0.7s ease;
+}
+main .calculadora-claro .footer .teclado .teclado-botoes .bloco .theme :hover {
+  transform: scale(1.2);
+}
+main .calculadora-claro .footer .botao {
+  font-size: 24.48px;
+  padding: 22.5px 25px 22.5px 25px;
+}
+main .calculadora-claro .footer #botao-azul {
+  font-size: 24.48px;
+  color: var(--azul);
+  padding: 22.5px 25px 22.5px 25px;
+}
+main .calculadora-claro .footer #C {
+  color: #FF6060;
+}
+main .calculadora-claro hr {
+  width: 70%;
+  background: #9BABB8;
+  border-radius: 25px;
+}
+
+#dark-mode-input {
+  display: none;
+}
+
+#dark-mode-input:checked ~ main {
+  background-image: linear-gradient(94.3deg, rgb(26, 33, 64) 10.9%, rgb(81, 84, 115) 87.1%);
+  padding: 29px 300px 100px 300px;
+  display: flex;
+  justify-content: space-around;
+}
+#dark-mode-input:checked ~ main .calculadora-claro {
+  background-color: var(--azul-escuro);
+  border-radius: 20px;
+  height: 530px;
+  width: 340px;
+  margin-bottom: 29px;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 20px 20px 0 0;
+  background-color: var(--preto);
+  background-size: 200%;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .cabecalho .info {
+  display: flex;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .cabecalho .info #h4 {
+  font-size: 15px;
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  padding-right: 10px;
+  color: var(--cor-branco);
+}
+#dark-mode-input:checked ~ main .calculadora-claro .cabecalho .cabecalho-icone {
+  color: var(--cor-branco);
+  filter: invert(100%);
+}
+#dark-mode-input:checked ~ main .calculadora-claro .painel {
+  background-color: var(--azul-escuro);
+  padding-top: 81px;
+  padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 80px;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .painel h3 {
+  font-family: var(--fonte-principal);
+  font-weight: 500;
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding-right: 23px;
+  padding-top: 10px;
+  color: var(--cor-branco);
+}
+#dark-mode-input:checked ~ main .calculadora-claro .painel h2 {
+  font-size: 40px;
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  padding-right: 23px;
+  color: var(--cor-branco);
+}
+#dark-mode-input:checked ~ main .calculadora-claro .painel h2 #current-operation {
+  padding-bottom: 29px;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .footer {
+  background-color: var(--cinza-escuro);
+  padding: 16px 20px 5px 20px;
+  border-radius: 30px;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .footer .teclado {
+  display: flex;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .footer .teclado .teclado-botoes {
+  display: flex;
+  flex-direction: column;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .footer .teclado .teclado-botoes .theme {
+  filter: invert(100%);
+  width: 40px;
+  height: 40px;
+  padding: 17px 20px 20px 35px;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .footer .teclado .botao {
+  font-size: 24.48px;
+  padding: 22.5px 25px 22.5px 25px;
+  color: var(--cor-branco);
+}
+#dark-mode-input:checked ~ main .calculadora-claro .footer .teclado .botao :hover {
+  color: var(--azul);
+  transform: scale(1.3);
+  text-shadow: 2px 2px 0px #FFFFFF;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .footer .teclado #botao-azul {
+  font-size: 24.48px;
+  color: var(--azul);
+  padding: 22.5px 25px 22.5px 25px;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .footer .teclado #C {
+  color: #FF6060;
+}
+#dark-mode-input:checked ~ main .calculadora-claro .footer hr {
+  width: 70%;
+  background: #9BABB8;
+  border-radius: 25px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    height: 94vh;
+    padding: 0;
+  }
+  main .calculadora-claro {
+    border-radius: 0px;
+    height: 100vh;
+    width: 100vw;
+  }
+  main .calculadora-claro .cabecalho {
+    border-radius: 0px;
+    background-size: 200%;
+  }
+  main .calculadora-claro .painel {
+    padding-top: 40%;
+  }
+  main .calculadora-claro .painel h3 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    padding-right: 23px;
+    padding-top: 10px;
+    color: var(--cor-branco);
+  }
+  main .calculadora-claro .painel h2 {
+    font-size: 40px;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    padding-right: 23px;
+    color: var(--cor-branco);
+  }
+  main .calculadora-claro .teclado {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  main .calculadora-claro .teclado .botao {
+    font-size: 40px;
+    padding: 2.1rem 2rem;
+  }
+  main .calculadora-claro .teclado #botao-azul {
+    font-size: 40px;
+    color: var(--azul);
+    padding: 2rem 2rem;
+  }
+  main footer {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */

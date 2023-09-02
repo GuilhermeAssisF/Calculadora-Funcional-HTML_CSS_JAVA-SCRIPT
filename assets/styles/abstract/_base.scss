@@ -1,0 +1,24 @@
+@import '../abstract/variaveis';
+
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: crosshair;
+    
+}
+
+button:hover {
+    color: var(--azul);
+    transform: scale(1.3);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    transform: scale(0.98);
+}
+
+
+

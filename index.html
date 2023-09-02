@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <script src="./assets/js/script.js" defer></script>
+
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <input type="checkbox" id="dark-mode-input" />
+
+    <main>
+        <!--Calculadora Tema Claro-->
+
+        <section class="calculadora-claro">
+
+            <!--Barra notificação-->
+            <div class="cabecalho">
+                <div class="info">
+                    <b><span class="date" id="h4"></span></b><br>
+                    <b><span class="time" id="h4"></span></b>
+                </div>
+                <div class="cabecalho-icone">
+                    <img src="/assets/img/Cellular Connection.png">
+                    <img src="/assets/img/Wifi.svg">
+                    <img src="/assets/img/Battery.png">
+                </div>
+            </div>
+
+            <!--Painel-->
+            <div class="painel" id="operations">
+                <h3 class="painel-conta" id="previous-operation"></h3>
+                <h2 class="painel-texto" id="current-operation"></h2>
+            </div>
+
+            <!--teclado-->
+            <div class="footer">
+
+                <!--linha1-->
+                <div class="teclado">
+                    <div class="teclado-botoes">
+                        <button class="botao" id="C">C</button>
+                        <button class="botao">7</button>
+                        <button class="botao">4</button>
+                        <button class="botao">1</button>
+                        <button class="botao">.</button>
+                    </div>
+
+                    <!--linha2-->
+                    <div class="teclado-botoes">
+                        <button class="botao" id="C">CE</button>
+                        <button class="botao">8</button>
+                        <button class="botao">5</button>
+                        <button class="botao">2</button>
+                        <button class="botao">0</button>
+                    </div>
+
+                    <!--linha3-->
+                    <div class="teclado-botoes">
+                        <!--<button class="botao"><img src="/assets/img/⌫.png"></button>-->
+                        <button class="botao" id="botao-azul">DEL</button>
+                        <button class="botao">9</button>
+                        <button class="botao">6</button>
+                        <button class="botao">3</button>
+                        <label clas="bloco" for="dark-mode-input">
+                            <img class="theme" src="assets/img/night.png">
+                        </label>
+                    </div>
+
+                    <!--linha4-->
+                    <div class="teclado-botoes" id="teclado-botoes-azul">
+                        <!--<button class="botao" id="botao-azul"><img src="/assets/img/÷.png"></button>-->
+                        <button class="botao" id="botao-azul">/</button>
+                        <button class="botao" id="botao-azul">x</button>
+                        <button class="botao" id="botao-azul">-</button>
+                        <button class="botao" id="botao-azul">+</button>
+                        <button class="botao" id="botao-azul">=</button>
+                    </div>
+                </div>
+
+                <hr size="5px" color="#C4C4C4">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>Guilherme A. Fernandes</h1>
+    </footer>
+</body>
+<script src="./assets/js/time.js"></script>
+
+</html>

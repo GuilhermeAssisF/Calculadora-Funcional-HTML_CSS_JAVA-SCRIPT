@@ -1,0 +1,369 @@
+@import '../abstract/variaveis';
+
+main {
+    background-image: linear-gradient(156.8deg, rgba(30, 144, 231, 1) 27.1%, rgba(67, 101, 225, 1) 77.8%);
+    padding: 29px 300px 100px 300px;
+    display: flex;
+    justify-content: space-around;
+
+    .calculadora-claro {
+        background-color: var(--cor-cinza);
+        border-radius: 20px;
+        height: 530px;
+        width: 340px;
+        margin-bottom: 29px;
+
+
+        .cabecalho {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            border-radius: 20px 20px 0 0;
+            background-color: var(--cor-branco);
+            background-size: 200%;
+
+            .info {
+                display: flex;
+
+                #h4 {
+                    font-size: 15px;
+                    font-family: var(--fonte-principal);
+                    font-weight: 600;
+                    padding-right: 10px;
+                }
+            }
+
+        }
+
+        .painel {
+            background-color: var(--cor-cinza);
+            padding-top: 81px;
+            padding-bottom: 17px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            height: 80px;
+
+
+            h3 {
+                font-family: var(--fonte-principal);
+                font-weight: 500;
+                font-size: 30px;
+                padding-bottom: 10px;
+                padding-right: 23px;
+                padding-top: 10px;
+            }
+
+            h2 {
+                font-size: 40px;
+                font-family: var(--fonte-principal);
+                font-weight: 600;
+                padding-right: 23px;
+
+                #current-operation {
+                    padding-bottom: 29px;
+                }
+            }
+
+        }
+
+        .footer {
+            background-color: var(--azul-claro);
+            padding: 16px 20px 5px 20px;
+            border-radius: 30px;
+
+
+
+
+            .teclado {
+
+                display: flex;
+
+
+                .teclado-botoes {
+                    display: flex;
+                    flex-direction: column;
+
+
+                    .theme {
+                        width: 40px;
+                        height: 40px;
+                        padding: 17px 20px 20px 35px;
+                        -webkit-transition: all 0.7s ease;
+                        transition: all 0.7s ease;
+                        overflow: hidden;
+
+                    }
+
+                    .bloco {
+                        width: 250px;
+                        height: 150px;
+                        margin: 15px;
+                        overflow: hidden;
+
+                        .theme {
+                            -webkit-transition: all 0.7s ease;
+                            transition: all 0.7s ease;
+
+                            :hover {
+                                -webkit-transform: scale(1.2);
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .botao {
+                font-size: 24.48px;
+                padding: 22.5px 25px 22.5px 25px;
+            }
+
+            /*#teclado-botoes-azul{
+                    margin-right: 10px;
+                }*/
+
+
+            #botao-azul {
+                font-size: 24.48px;
+                color: var(--azul);
+                padding: 22.5px 25px 22.5px 25px;
+            }
+
+            #C {
+                color: #FF6060;
+            }
+
+        }
+
+        hr {
+            width: 70%;
+            background: #9BABB8;
+            border-radius: 25px;
+        }
+
+
+    }
+
+}
+
+#dark-mode-input {
+    display: none;
+}
+
+#dark-mode-input:checked {
+    ~main {
+        background-image: linear-gradient(94.3deg, rgba(26, 33, 64, 1) 10.9%, rgba(81, 84, 115, 1) 87.1%);
+        padding: 29px 300px 100px 300px;
+        display: flex;
+        justify-content: space-around;
+
+        .calculadora-claro {
+            background-color: var(--azul-escuro);
+            border-radius: 20px;
+            height: 530px;
+            width: 340px;
+            margin-bottom: 29px;
+
+            .cabecalho {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 30px;
+                border-radius: 20px 20px 0 0;
+                background-color: var(--preto);
+                background-size: 200%;
+
+                .info {
+                    display: flex;
+
+                    #h4 {
+                        font-size: 15px;
+                        font-family: var(--fonte-principal);
+                        font-weight: 600;
+                        padding-right: 10px;
+                        color: var(--cor-branco);
+                    }
+                }
+
+                .cabecalho-icone {
+                    color: var(--cor-branco);
+                    filter: invert(100%);
+                }
+            }
+
+            .painel {
+                background-color: var(--azul-escuro);
+                padding-top: 81px;
+                padding-bottom: 17px;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                height: 80px;
+
+
+                h3 {
+                    font-family: var(--fonte-principal);
+                    font-weight: 500;
+                    font-size: 30px;
+                    padding-bottom: 10px;
+                    padding-right: 23px;
+                    padding-top: 10px;
+                    color: var(--cor-branco);
+
+                }
+
+                h2 {
+                    font-size: 40px;
+                    font-family: var(--fonte-principal);
+                    font-weight: 600;
+                    padding-right: 23px;
+                    color: var(--cor-branco);
+
+
+                    #current-operation {
+                        padding-bottom: 29px;
+                    }
+                }
+
+            }
+
+            .footer {
+                background-color: var(--cinza-escuro);
+                padding: 16px 20px 5px 20px;
+                border-radius: 30px;
+
+
+
+
+                .teclado {
+
+                    display: flex;
+
+
+                    .teclado-botoes {
+                        display: flex;
+                        flex-direction: column;
+
+                        .theme {
+                            filter: invert(100%);
+                            width: 40px;
+                            height: 40px;
+                            padding: 17px 20px 20px 35px;
+
+
+                        }
+                    }
+
+                    .botao {
+                        font-size: 24.48px;
+                        padding: 22.5px 25px 22.5px 25px;
+                        color: var(--cor-branco);
+
+                        :hover {
+                            color: var(--azul);
+                            transform: scale(1.3);
+                            text-shadow: 2px 2px 0px #FFFFFF;
+                        }
+                    }
+
+                    #botao-azul {
+                        font-size: 24.48px;
+                        color: var(--azul);
+                        padding: 22.5px 25px 22.5px 25px;
+                    }
+
+                    #C {
+                        color: #FF6060;
+                    }
+
+                }
+
+                hr {
+                    width: 70%;
+                    background: #9BABB8;
+                    border-radius: 25px;
+                }
+
+
+            }
+
+
+        }
+    }
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        height: 94vh;
+        padding: 0;
+
+        .calculadora-claro {
+            border-radius: 0px;
+            height: 100vh;
+            width: 100vw;
+
+            .cabecalho {
+                border-radius: 0px;
+                background-size: 200%;
+
+            }
+
+            .painel {
+                padding-top: 40%;
+
+                h3 {
+
+                    font-size: 30px;
+                    padding-bottom: 10px;
+                    padding-right: 23px;
+                    padding-top: 10px;
+                    color: var(--cor-branco);
+
+                }
+
+                h2 {
+                    font-size: 40px;
+                    font-family: var(--fonte-principal);
+                    font-weight: 600;
+                    padding-right: 23px;
+                    color: var(--cor-branco);
+                }
+            }
+
+            .teclado {
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 2rem;
+
+                .botao {
+                    font-size: 40px;
+                    padding: 2.1rem 2rem;
+                }
+
+                #botao-azul {
+                    font-size: 40px;
+                    color: var(--azul);
+                    padding: 2rem 2rem;
+                }
+            }
+
+
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+}
